@@ -1,0 +1,145 @@
+/* стилі для 1 каруселі */
+.custom-carousel {
+  width: 100%; /* Встановлює ширину каруселі на 100% */
+  max-width: 100%; /* Встановлює максимальну ширину каруселі на 100% */
+  max-height: 500px;  
+}
+
+.custom-carousel img {
+  width: 100%; /* Заповнює всю ширину контейнера */
+  object-fit: cover; /* Забезпечує, щоб картинка заповнила весь простір, не деформуючись */
+}
+
+
+
+/* для брендів */
+.custom-container {
+  background-color: #f4f5f6;  
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card {
+  border-radius: 15px;
+  overflow: hidden;  
+}
+.card:hover img {
+  transform: scale(1.05); 
+}
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-title {
+  color: rgb(96, 213, 226) !important;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+ 
+/* 2 карусель */
+.carousel-container {
+  position: relative;
+  overflow: hidden; /* Ховаємо те, що виходить за межі */
+  width: 100%; /* Забезпечуємо ширину контейнера */
+}
+
+.carousel-track-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap; /* Ніколи не переносити елементи на новий рядок */
+}
+
+.product-card {
+  margin-right: 15px;
+  width: 220px; /* Встановлюємо ширину карток */
+  display: flex; /* Встановлюємо flex-контейнер */
+  flex-direction: column; /* Розташовуємо елементи по вертикалі */
+  justify-content: space-between; /* Розподіляємо елементи рівномірно */
+  height: 350px; /* Встановлюємо висоту картки */
+}
+
+.product-card img {
+  width: 100%; /* Зберігаємо пропорції картинки */
+  height: 180px; /* Встановлюємо висоту для картинки */
+  object-fit: contain; /* Забезпечуємо, щоб зображення не обрізалося, а зменшувалося */
+}
+
+
+.card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Для вирівнювання заголовка і тексту */
+  flex-grow: 1; /* Дозволяє блоку з текстом займати всю доступну висоту */
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px; /* Між заголовком і текстом */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: auto; /* Встановлює текст внизу */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
+.footer-custom {
+  background-color: rgba(202, 233, 249, 0.87);
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #dee2e6;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* жирний текст */
+  color: #073375; /* синій */
+}
+
+.footer-custom a {
+  color: #104252;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.footer-custom a:hover {
+  color: #8babda;
+}
+
+.footer-custom .payment-icons img {
+  border-radius: .25rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075);
+  width: 50px;
+}
+
+
+
